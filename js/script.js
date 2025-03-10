@@ -47,16 +47,17 @@ function switchTheme(e) {
 
 // Save user preference on load
 
-const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
+let currentTheme = localStorage.getItem("theme");
 
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
+if (!currentTheme) {
+  currentTheme = "dark";
+  localStorage.setItem("theme", "dark");
+}
 
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-  }
+document.documentElement.setAttribute("data-theme", currentTheme);
+
+if (currentTheme === "dark") {
+  toggleSwitch.checked = true;
 }
 
 //Adding date
