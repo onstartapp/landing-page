@@ -75,6 +75,11 @@
     />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/utilities.css"/>
+    <script>
+        if (!localStorage.getItem("theme")) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+    </script>
 </head>
 <body>
 <header id="hero">
