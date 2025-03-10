@@ -91,6 +91,15 @@ body {
   width: 100%;
 }
 
+.navbar .container-full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  height: 80px;
+  width: 100%;
+}
+
 .navbar .nav-menu {
   display: flex;
   align-items: center;

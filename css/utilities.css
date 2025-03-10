@@ -82,12 +82,25 @@ h2::selection {
   padding: 1rem;
 }
 
+.header-container-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
 .header-container > div {
   margin-top: 1rem;
 }
 
 .content-text {
   text-align: center;
+  margin: 1.5rem 0;
+}
+
+.content-text-full {
   margin: 1.5rem 0;
 }
 
@@ -101,6 +114,43 @@ h2::selection {
   padding: 0.5rem;
   margin: 0 auto;
   max-width: 700px;
+}
+
+.content-text-full p {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.content-text-full h2 {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.content-text-full li {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.content-text-full table {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+  border-collapse: collapse; /* Kenarlıkları birleştirir */
+  border: 2px solid white; /* Tablonun dış çerçevesini beyaz yapar */
+  color: white; /* Yazıları beyaz yapar */
+}
+
+.content-text-full table th,
+.content-text-full table td {
+  border: 1px solid white; /* Hücre kenarlarını beyaz yapar */
+  padding: 8px;
+}
+
+.content-text-full a {
+  color: #03adfc;
 }
 
 /* Project cards */
